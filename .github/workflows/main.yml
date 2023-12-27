@@ -11,7 +11,7 @@ on:
 jobs:
   build:
     runs-on: 
-      group: Pravins-Windows-Machine
+      name: Pravins-Windows-Machine
 
     steps:
       - name: Checkout master branch to $GITHUB_WORKSPACE
