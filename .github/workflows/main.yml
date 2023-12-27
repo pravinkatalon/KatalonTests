@@ -14,9 +14,9 @@ jobs:
       labels: [self-hosted, Windows, X64]
 
     steps:
-      - name: Checkout master branch to $GITHUB_WORKSPACE
+      - name: Checkout master branch to ${{ pwd }}
         uses: actions/checkout@v4
 
-      - name: Get checkout path 
-        run: pwd
+      - name: Run Katalon Tests
+        run: D:\PortableSoft\KatalonRE8.6.8\katalonc.exe -noSplash -runMode=console -projectPath="C:\Users\pravi\Katalon Studio\KatalonWeb\Web Project.prj" -retry=0 -testSuitePath="Test Suites/WebTestSuite1" -browserType="Chrome" -executionProfile="default" -apiKey="81ab5e6a-c629-457c-8eb7-cdfeac4656f1" -orgID=902399 -testOpsReleaseId=462222 -testOpsProjectId=1131203 --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true
     
