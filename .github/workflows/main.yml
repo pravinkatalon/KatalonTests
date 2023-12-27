@@ -1,0 +1,21 @@
+name: Run Katalon Tests
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout master branch to ${{GITHUB_WORKSPACE}}
+        uses: actions/checkout@v4
+
+      - name: Get checkout path 
+        run: echo $GITHUB_WORKSPACE
+    
