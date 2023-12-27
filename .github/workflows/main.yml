@@ -13,7 +13,7 @@ jobs:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout master branch to ${{ GITHUB_WORKSPACE }}
+      - name: Checkout master branch to $GITHUB_WORKSPACE
         uses: actions/checkout@v4
 
       - name: Get checkout path 
