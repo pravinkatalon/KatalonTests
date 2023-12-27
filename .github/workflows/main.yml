@@ -17,5 +17,5 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Get checkout path 
-        run: echo $GITHUB_WORKSPACE
+        run: pwd
     
