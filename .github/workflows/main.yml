@@ -10,7 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: windows-latest
+    runs-on: Pravins-Windows-Machine
 
     steps:
       - name: Checkout master branch to $GITHUB_WORKSPACE
