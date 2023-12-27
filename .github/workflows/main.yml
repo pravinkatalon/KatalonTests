@@ -11,7 +11,8 @@ on:
 jobs:
   build:
     runs-on: 
-      name: Pravins-Windows-Machine
+      group: self-hosted
+      labels: [self-hosted, Windows, X64]
 
     steps:
       - name: Checkout master branch to $GITHUB_WORKSPACE
